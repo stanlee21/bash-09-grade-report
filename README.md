@@ -40,38 +40,6 @@ This project automates the process using a Bash script that reads student record
 
 <!-- Add a screenshot of the program output here -->
 
-## Installation and Setup
-
-**1. Clone the repository*
-
-```bash
-git clone <repository-url>
-```
-
-**2. Enter the project directory*
-
-```bash
-cd bash-09-grade-report
-```
-
-**3. Make the script executable*
-
-```bash
-chmod +x grades.sh
-```
-
-**4. Run the program*
-
-```bash
-./grades.sh grades.csv
-```
-
-The CSV file must have the following header:
-
-```csv
-name,html,css,bash,git
-```
-
 ## Author
 
 **Tata Stanley Mbajing*
