@@ -1,44 +1,66 @@
-# Bash 09 – Grade Report
+# Student Grade Report Generator
 
-## Problem Statement
+## 1. Problem Statement
 
-Rebase instructors spend time manually calculating students' scores, averages, rankings, and grade classifications at the end of every month.
+Managing student grades manually can be time-consuming and prone to errors. This project provides a simple Bash script that reads student scores from a CSV file, validates the records, calculates grades, and generates an organized report.
 
-This project automates the process using a Bash script that reads student records from a CSV file and generates an organised grade report.
-
-## Project Goals
+## 2. Project Goals
 
 - Automate student grade calculations.
-- Calculate individual and class averages.
-- Assign grade classifications based on performance.
-- Rank students from highest to lowest average.
-- Identify and skip invalid records.
-- Generate a clear and readable report.
+- Validate CSV records and handle invalid data.
+- Rank students according to their average scores.
+- Generate a clear and readable grade report.
 
-## Tech Stack
+## 3. Tech Stack
 
-- **Language:** Bash
-- **Tools:** Linux Terminal, AWK, Git, GitHub
+- **Bash:** Main scripting language.
+- **Linux Terminal:** Development and execution environment.
+- **AWK:** Average calculations and number formatting.
+- **Git & GitHub:** Version control and project hosting.
 
-## Features
+## 4. Features
 
 - Reads student records from a CSV file.
-- Calculates totals and averages to two decimal places.
-- Assigns mentions: Très bien, Bien, Assez bien, Passable, and Échec.
-- Sorts students by average and assigns rankings.
-- Validates student records and reports invalid lines.
-- Handles Windows line endings and unnecessary spaces.
-- Displays the overall class average.
+- Validates student names and scores.
+- Rejects missing, non-numeric, and out-of-range scores.
+- Calculates total scores and averages.
+- Assigns grade mentions based on student performance.
+- Sorts students from highest to lowest average.
+- Implements competition ranking, including tied positions.
+- Calculates the overall class average.
+- Reports the number of skipped records.
+- Handles blank lines, extra spaces, Windows line endings, and empty CSV files.
 
-## Screenshots
+## 5. Screenshots
 
-### 1. Code
+### Code
 
-<!-- Add a screenshot of your grades.sh code here -->
+![alt text](<assets/img/Screenshot From 2026-11-01 23-13-38.png>)
 
-### 2. Program Output
+### Program Output
 
-<!-- Add a screenshot of the program output here -->
+![alt text](<assets/img/Screenshot From 2026-11-01 23-14-27.png>)
+
+## 6. Installation and Setup
+
+**Prerequisites:*
+
+- Linux environment or WSL.
+- Bash shell.
+- AWK and standard Linux command-line utilities.
+
+## 7. What I Learned
+
+Through this project, I improved my understanding of:
+
+- Reading and processing CSV files in Bash.
+- Using loops, conditional statements, and functions.
+- Validating user data and handling errors.
+- Performing arithmetic operations in shell scripts.
+- Working with `awk`, `sort`, and `printf`.
+- Managing temporary files.
+- Handling edge cases and testing Bash scripts.
+- Using Git and GitHub to manage project development.
 
 ## Author
 
@@ -48,4 +70,4 @@ Junior Frontend Developer
 
 Email: [stanleymbajingtata@gmail.com]
 
-GitHub: [(https://github.com/stanlee21)]
+GitHub: [https://github.com/stanlee21]
