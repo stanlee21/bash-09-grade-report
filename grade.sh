@@ -1,11 +1,15 @@
 #!/bin/bash
 
 {
-    read -r header
+    read -r _
 
     while read -r line; do
         IFS=',' read -r name html css bash_score git_score <<< "$line"
 
-        echo "Name: $name | HTML: $html | CSS: $css | Bash: $bash_score | Git: $git_score"
+        total=$((html + css + bash_score + git_score))
+
+        average=$(awk -v total="$total" 'BEGIN { printf "%.2f", total / 4 }')
+
+        echo "Name: $name | Total: $total | Average: $average"
     done
 } < grades.csv
