@@ -10,6 +10,18 @@
 
         average=$(awk -v total="$total" 'BEGIN { printf "%.2f", total / 4 }')
 
-        echo "Name: $name | Total: $total | Average: $average"
+        if [ "$total" -ge 64 ]; then
+            mention="Très bien"
+        elif [ "$total" -ge 56 ]; then
+            mention="Bien"
+        elif [ "$total" -ge 48 ]; then
+            mention="Assez bien"
+        elif [ "$total" -ge 40 ]; then
+            mention="Passable"
+        else
+            mention="Échec"
+        fi
+
+        echo "Name: $name | Total: $total | Average: $average | Mention: $mention"
     done
 } < grades.csv
