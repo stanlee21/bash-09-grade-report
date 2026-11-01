@@ -70,4 +70,4 @@ Junior Frontend Developer
 
 Email: [stanleymbajingtata@gmail.com]
 
-GitHub: [(https://github.com/stanlee21)]
+GitHub: [https://github.com/stanlee21]
